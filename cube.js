@@ -6,7 +6,28 @@ etc...
 
 make each block on click pop up a form to then fill in some info
 
-after esatblished, refresh page, gridbox should be filled with color, on hover, displays name and main lang/langs
+after esatblished, refresh page, gridbox should be filled with color, on hover, displays name and main lang/langs (grabbed from github api)
 
 on click of grid, popups the form with links and socials
+
+may need 'data-ga-click="Repository, language stats search click, location:repo overview"' to grab lang data
 */ 
+const btnReposTest = document.getElementById("creator-info");
+btnReposTest.addEventListener("click", getRepos);
+
+function getRepos() {
+    alert("working")
+}
+
+const grid = document.querySelector('.cube');
+
+for (let i = 0; i < 64; i++) {
+	const cell = document.createElement('button');
+	cell.classList.add('cell');
+
+	// const button = document.createElement('button');
+	// button.textContent = i + 1;
+
+	// cell.append(button);
+	grid.append(cell);
+}
