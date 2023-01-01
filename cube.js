@@ -12,12 +12,21 @@ on click of grid, popups the form with links and socials
 
 may need 'data-ga-click="Repository, language stats search click, location:repo overview"' to grab lang data
 */ 
-const btnReposTest = document.getElementById("creator-info");
-btnReposTest.addEventListener("click", getRepos);
+const btnCreatorInfo = document.getElementById("creator-info");
+const socialBar = document.getElementById("side-bar");
+btnCreatorInfo.addEventListener("click", getSocials);
 
-function getRepos() {
-    alert("working")
+function getSocials() {
+    if (socialBar.style.visibility = "hidden") {
+        socialBar.style.visibility = "visible";
+    }
 }
+
+document.addEventListener('mouseup', function(e) {
+    if (!socialBar.contains(e.target)) {
+        socialBar.style.visibility = "hidden";
+    }
+});
 
 const grid = document.querySelector('.cube');
 
