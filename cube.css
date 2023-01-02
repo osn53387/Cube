@@ -22,8 +22,16 @@ body {
     flex-direction: column;
     align-items: center;
     top: 25%;
-    
-    
+}
+
+.bottom-content {
+    position: absolute;
+    width: 80vw;
+    height: 30vh;
+    top: 80%;
+    left: 50%;
+    background-color:coral;
+    transform: translateX(-50%);
 }
 
 .left-sided-content {
@@ -90,6 +98,11 @@ body {
     opacity: 0;
     transform: translateY(-50%);
     transition: .25s;
+}
+
+.user-info-form {
+    display: flex;
+    
 }
 
 .social-buttons {
