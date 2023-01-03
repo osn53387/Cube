@@ -32,7 +32,11 @@ body {
     left: 50%;
     background-color:coral;
     transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
 
 .left-sided-content {
     position: absolute;
@@ -78,7 +82,7 @@ body {
     width: 6em;
     height: 20em;
     transform: translateY(-50%);
-    background-color: wheat;
+    background-color: #1b1c1b;
     pointer-events: visibleFill; 
     display: flex;
     visibility: hidden;
@@ -102,9 +106,17 @@ body {
 
 .user-info-form {
     display: flex;
-    
+    justify-content: space-evenly;
+}
+
+.user-info-form > * {
+    margin: 5px;
 }
 
 .social-buttons {
     padding: 20px;
+}
+
+#linkdin {
+    background: center/cover url("/images/4c87d1c257a7b9cc3f28f4c98c5a7686.jpg") no-repeat;
 }
