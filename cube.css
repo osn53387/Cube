@@ -27,8 +27,8 @@ body {
 .bottom-content {
     position: absolute;
     width: 80vw;
-    height: 30vh;
-    top: 80%;
+    height: 10vh;
+    bottom: 0%;
     left: 50%;
     background-color:coral;
     transform: translateX(-50%);
