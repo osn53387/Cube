@@ -82,7 +82,7 @@ body {
     width: 6em;
     height: 20em;
     transform: translateY(-50%);
-    background-color:#434a46
+    background-color:#1b1c1b;
     pointer-events: visibleFill; 
     display: flex;
     visibility: hidden;
@@ -94,6 +94,7 @@ body {
 
 .side-bar.show {
     visibility: visible;
+    opacity: .8;
     transform: translateY(-50%);
     transition: .25s;
 }
