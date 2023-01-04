@@ -82,7 +82,7 @@ body {
     width: 6em;
     height: 20em;
     transform: translateY(-50%);
-    background-color: #1b1c1b;
+    background-color:#434a46
     pointer-events: visibleFill; 
     display: flex;
     visibility: hidden;
@@ -115,8 +115,28 @@ body {
 
 .social-buttons {
     padding: 20px;
+    border: none;
+}
+
+.social-buttons > * {
+    width: 30px;
+    height: 30px;
 }
 
 #linkdin {
-    background: center/cover url("/images/4c87d1c257a7b9cc3f28f4c98c5a7686.jpg") no-repeat;
+    background: url("/images/1654634.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#email {
+    background: url("/images/639817_email_512x512.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#github {
+    background: url("/images/github-logo-white.png") no-repeat;
+    background-size: contain;
+    background-position: center;
 }
