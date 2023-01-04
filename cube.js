@@ -17,12 +17,14 @@ const socialBar = document.getElementById("side-bar");
 btnCreatorInfo.addEventListener("click", getSocials);
 
 function getSocials() {
+    btnCreatorInfo.classList.add('show');
     socialBar.classList.remove('disappear');
     socialBar.classList.add('show');      
 }
 
 document.addEventListener('mouseup', function(e) {
     if (!socialBar.contains(e.target)) {
+        btnCreatorInfo.classList.remove('show');
         socialBar.classList.remove('show');
         socialBar.classList.add('disappear');
     }
