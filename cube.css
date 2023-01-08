@@ -102,13 +102,13 @@ body {
     visibility: visible;
     opacity: .8;
     transform: translateY(-50%);
-    transition: .25s;
+    transition: 1.25s;
 }
 
 .side-bar.disappear {
     opacity: 0;
     transform: translateY(-50%);
-    transition: .25s;
+    transition: .5s;
 }
 
 .user-info-form {
