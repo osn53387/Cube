@@ -1,0 +1,151 @@
+.body {
+    background-color: #1b1c1b;
+    color: wheat;
+}
+
+#creator-info {
+    background: url("/images/532-5328945_menu-bar-icon-white-clipart-png-download-menu.png") no-repeat;
+    padding: 35px;
+    background-position: center;
+    background-size: 24px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+}
+
+#creator-info:hover {
+    background-color: #1b1c1b;
+    opacity: .9;
+}
+
+#creator-info.show {
+    background: none;
+}
+
+.top-heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 25%;
+}
+
+.bottom-content {
+    position: absolute;
+    width: 80vw;
+    height: 10vh;
+    bottom: 0%;
+    left: 50%;
+    visibility: hidden;
+    background-color: coral;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom-content.show {
+    visibility: visible;
+}
+
+
+.left-sided-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.right-sided-content {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0%;
+
+}
+
+.cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    height: 20em;
+    border: dotted white;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1c1b;
+}
+
+.cell:hover {
+    background-color: #434a46;
+}
+
+.side-bar {
+    position: absolute;
+    width: 6em;
+    height: 20em;
+    transform: translateY(-50%);
+    background-color: #1b1c1b;
+    pointer-events: visibleFill;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 0%;
+    top: 50%;
+}
+
+.side-bar.show {
+    visibility: visible;
+    opacity: .8;
+    transform: translateY(-50%);
+    transition: .25s;
+}
+
+.side-bar.disappear {
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: .25s;
+}
+
+.user-info-form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user-info-form>* {
+    margin: 5px;
+}
+
+.social-buttons {
+    padding: 20px;
+    border: none;
+    opacity: 1;
+}
+
+
+
+#linkdin {
+    background: url("/images/1654634.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#email {
+    background: url("/images/639817_email_512x512.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#github {
+    background: url("/images/github-logo-white.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+}

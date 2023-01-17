@@ -8,9 +8,9 @@ make each block on click pop up a form to then fill in some info
 
 after esatblished, refresh page, gridbox should be filled with color, on hover, displays name and main lang/langs (grabbed from github api)
 
-on click of grid, popups the form with links and socials
+on click of grid, popups the form with links and socials, disable after a color is established
 
-may need 'data-ga-click="Repository, language stats search click, location:repo overview"' to grab lang data
+may need 'data-ga-click="Repository, language stats search click, location:repo overview"' to grab lang data from github api
 */ 
 const btnCreatorInfo = document.getElementById("creator-info");
 const socialBar = document.getElementById("side-bar");
@@ -41,4 +41,13 @@ for (let i = 0; i < 64; i++) {
 
 	// cell.append(button);
 	grid.append(cell);
+}
+
+const validCell = document.getElementsByTagName("button");
+const bottomBar = document.getElementById("bottom-content");
+validCell.addEventListener("click", getRegister);
+
+function getRegister() {
+    bottomBar.classList.add('show');
+
 }
